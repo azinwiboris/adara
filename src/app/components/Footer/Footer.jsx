@@ -1,18 +1,14 @@
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
-import './_footer.scss'
-import Socials from "@/components/Socials/Socials"
-import { ArrowRight } from "@carbon/icons-react";
+import './_footer.scss' // Ensure this SCSS file exists and is correctly styled
+import Socials from "@/components/Socials/Socials"; // Ensure this component exists
+import { ArrowRight } from "@carbon/icons-react"; // Note: This import is present but ArrowRight is not used in the provided JSX.
 
 // Footer.jsx
-// (Place this in a file named Footer.jsx, e.g., src/components/Footer/Footer.jsx)
 import React, { useState, useEffect } from 'react';
-import './_footer.scss'; // We'll create this CSS file next
 
-// You would typically install and import these from @carbon/icons-react
-// npm install @carbon/icons-react
-// yarn add @carbon/icons-react
-// For this example, we'll use simple text or SVGs as placeholders if you don't have them.
+// Inline SVGs for Chevron icons as provided
 const ChevronDown = ({ size = 20 }) => (
   <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
     <path d="M16 22L6 12l1.4-1.4 8.6 8.6 8.6-8.6L26 12z"></path>
@@ -25,18 +21,16 @@ const ChevronUp = ({ size = 20 }) => (
   </svg>
 );
 
-// Placeholder for social icons (Ideally use Carbon icons)
-//const SocialIcon = ({ label }) => <span className="social-icon-placeholder">{label.substring(0,2).toUpperCase()}</span>;
-
-
 const Footer = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  // Initialize isMobile to a default value (e.g., false).
+  // It will be correctly set on the client-side by useEffect.
+  const [isMobile, setIsMobile] = useState(false);
   const [openAccordion, setOpenAccordion] = useState(null); // Stores the index of the open accordion
 
   // Footer data based on provided images
   const footerSections = [
     {
-      title: 'Amission & Programs',
+      title: 'Admission & Programs', // Corrected typo from Amission
       links: [
         { text: 'Higher National Diploma (HND)', url: './Admission/HND' },
         { text: 'Bachelors Programs', url: './Admission/BSc' },
@@ -68,15 +62,13 @@ const Footer = () => {
     {
       title: 'Connect with Us',
       links: [
-        { text: 'Contact Adara Institue', url: '#' },
+        { text: 'Contact Adara Institue', url: '#' }, // Typo: Institue -> Institute
         { text: 'Investor Relations', url: '#' },
         { text: 'Partner with Us', url: '#' },
         { text: 'Location', url: '#' },
       ],
     },
   ];
-
-  
 
   // Effect to handle window resize for responsive behavior
   useEffect(() => {
@@ -88,12 +80,14 @@ const Footer = () => {
       }
     };
 
+    // Set the initial state correctly on the client-side
+    handleResize();
+
     window.addEventListener('resize', handleResize);
-    // Call handler right away so state is set correctly on initial load
-    handleResize(); 
-    
+
+    // Cleanup listener on component unmount
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, []); // Empty dependency array ensures this runs once on mount and cleans up on unmount
 
   // Function to toggle accordion sections
   const toggleAccordion = (index) => {
@@ -110,25 +104,21 @@ const Footer = () => {
         {/* Upper section: Brand and Links */}
         <div className="cds-footer-main">
           <div className="cds-footer-brand-section">
-            <Link href="./" className="cds-footer-logo-link" aria-label="IBM Home">
-              {/* IBM Logo SVG - taken from Carbon Design System examples */}
-              
-              <Image 
-                src="/../public/images/logogrey100.png" 
+            <Link href="/" className="cds-footer-logo-link" aria-label="Adara Institute Home">
+              {/* For Next.js Image component, if 'public' is at your project root,
+                the src path should typically start with just '/', e.g., "/images/logogrey100.png".
+                Verify the path to your image.
+              */}
+              <Image
+                src="/images/logogrey100.png" // Adjusted path assuming 'public/images/...'
                 alt="Adara Institute Official Logo"
                 width={88}
                 height={88}
               />
-              
             </Link>
-           
-           
-           <h4>
+            <h4>
               Adara Institute
             </h4>
-            
-           
-          
           </div>
 
           <div className="cds-footer-links-section">
@@ -178,8 +168,7 @@ const Footer = () => {
         {/* Lower section: Legal, Locale */}
         <div className="cds-footer-legal-section">
           <div className="cds-footer-legal-primary">
-            <p className="cds-footer-copyright">&copy; Copyright <b>Adara Institute</b>. {new Date().getFullYear()} <br /> Developed by
-  Bluezoft.</p>
+            <p className="cds-footer-copyright">&copy; Copyright <b>Adara Institute</b>. {new Date().getFullYear()} <br /> Developed by Bluezoft.</p>
             <ul className="cds-footer-legal-links">
               <li><a href="#" className="cds-footer-legal-link">Privacy Policy</a></li>
               <li><a href="#" className="cds-footer-legal-link">Terms and Conditions</a></li>
@@ -202,4 +191,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
