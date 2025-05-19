@@ -1,0 +1,30 @@
+.headerName {
+  display: block;
+  text-wrap: nowrap;
+}
+.pear {
+  color: black;
+  text-decoration-line: none;
+  list-style-type: none;
+}
+
+.paddy {
+  margin-left: 0px;
+}
+.nav {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  padding: 15px 16px;
+}
+.stack_button {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.headerMenu {
+  padding: 0.9rem 1rem;
+}

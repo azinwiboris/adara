@@ -1,0 +1,100 @@
+@use '@carbon/react/scss/spacing' as cds-spacing;
+@use '@carbon/react/scss/theme' as cds-theme;
+@use '@carbon/react/scss/type' as cds-type;
+@use '@carbon/react/scss/breakpoint' as cds-breakpoint;
+@use '@carbon/react/scss/grid' as cds-grid; // Ensure grid is available
+
+// If you are not importing Carbon styles globally, you might need to import some basics
+// @import '~carbon-components/scss/globals/scss/styles.scss'; // Example if installed
+
+.next-step-container {
+  background-color: cds-theme.$background; // This will be dark in a dark theme like g100
+  color: cds-theme.$text-primary;
+  padding: cds-spacing.$spacing-07 cds-spacing.$spacing-05; // Adjust padding as needed
+  border-radius: 0.375rem; // Approx 6px, adjust as needed
+  max-width: 100%; // Ensure it doesn't overflow its parent
+
+  // If you want to force a dark background regardless of theme:
+  // background-color: #161616; // $gray-100
+  // color: #f4f4f4; // $gray-10
+
+  // Ensure the grid column takes full width on small screens
+  .cds--col-sm-4 {
+    @include cds-breakpoint.breakpoint(sm) {
+      width: 100%;
+    }
+  }
+}
+
+.next-step-heading {
+  @include cds-type.type-style(
+    'heading-03'
+  ); // Example, choose appropriate heading level
+  margin-bottom: cds-spacing.$spacing-05;
+  color: cds-theme.$text-primary; // Ensure contrast on dark background
+}
+
+.next-step-description {
+  @include cds-type.type-style('body-long-01');
+  margin-bottom: cds-spacing.$spacing-07;
+  max-width: 40rem; // Limit line length for readability on wider screens
+  color: cds-theme.$text-secondary; // Or primary depending on emphasis
+}
+
+.next-step-buttons {
+  display: flex;
+  flex-wrap: wrap; // Allow buttons to wrap on smaller screens
+  gap: cds-spacing.$spacing-05; // Spacing between buttons
+
+  .next-step-button {
+    // No specific styles needed here if Carbon defaults are fine,
+    // but you can add overrides.
+    // Ensure primary button has good contrast on the dark background
+    &.cds--btn--primary {
+      // Carbon primary button should handle its own colors correctly based on theme
+    }
+
+    // Ensure tertiary/secondary button text is visible
+    &.cds--btn--tertiary,
+    &.cds--btn--secondary {
+      // Carbon should handle this, but verify text color if needed
+      // color: cds-theme.$link-primary; // For instance, if text is not visible
+    }
+  }
+}
+
+// Responsive adjustments for buttons
+@include cds-breakpoint.breakpoint-down(md) {
+  .next-step-buttons {
+    flex-direction: column; // Stack buttons vertically on medium and smaller screens
+
+    .next-step-button {
+      width: 100%; // Make buttons full width when stacked
+      margin-bottom: cds-spacing.$spacing-05; // Add some space below each button when stacked
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@include cds-breakpoint.breakpoint(md) {
+  .next-step-container {
+    padding: cds-spacing.$spacing-09 cds-spacing.$spacing-07;
+  }
+}
+
+@include cds-breakpoint.breakpoint(lg) {
+  .next-step-buttons {
+    flex-wrap: nowrap; // Prevent wrapping on large screens
+  }
+  .next-step-container {
+    // Center the content block if it has a max-width, similar to IBM's site.
+    // Example: if the parent of next-step-container is full width,
+    // you might want to constrain next-step-container itself.
+    // max-width: cds-grid.$container-lg; // Or specific width like 1312px
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+}

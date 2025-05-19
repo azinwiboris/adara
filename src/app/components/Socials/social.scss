@@ -1,0 +1,55 @@
+.instagram {
+  background: linear-gradient(
+    45deg,
+    /* Angle of the gradient */ #ffd600,
+    /* Yellow */ #ff7a00,
+    /* Orange */ #ff0069,
+    /* Red-Pink */ #d300c5,
+    /* Purple */ #7638fa /* Blue-Purple */
+  );
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: ffffff;
+  border-radius: 2px; /* Optional: for rounded corners */
+  //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.x {
+  background: ffffff;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: 161616;
+  border-radius: 2px; /* Optional: for rounded corners */
+  //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.linkedIn {
+  background: 161616;
+  color: #0f62fe;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px; /* Optional: for rounded corners */
+  //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.facebook {
+  background: 161616;
+  color: #0f62fe;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px; /* Optional: for rounded corners */
+  //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.logo {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  gap: 2;
+}

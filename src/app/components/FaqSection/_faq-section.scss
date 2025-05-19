@@ -1,0 +1,81 @@
+@use '@carbon/react/scss/spacing' as cds-spacing;
+@use '@carbon/react/scss/theme' as cds-theme;
+@use '@carbon/react/scss/type' as cds-type;
+@use '@carbon/react/scss/breakpoint' as cds-breakpoint;
+// Ensure Carbon global styles are loaded if not already
+// @import '~carbon-components/scss/globals/scss/styles.scss'; // For v10
+
+.faq-section {
+  padding-top: cds-spacing.$spacing-09;
+  padding-bottom: cds-spacing.$spacing-09;
+  // background-color: cds-theme.$background; // Or a specific section background like $ui-01 or $g10 depending on theme
+  // color: cds-theme.$text-primary;
+
+  .cds--col-lg-8 {
+    // Example to center content on large screens
+    @include cds-breakpoint.breakpoint(lg) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.faq-section__heading {
+  @include cds-type.type-style(
+    'heading-04'
+  ); // Choose appropriate heading style
+  margin-bottom: cds-spacing.$spacing-07;
+  // color: cds-theme.$text-primary;
+}
+
+.faq-section__accordion {
+  // The Carbon Accordion component itself is well-styled.
+  // You might add specific overrides if needed, but generally, it's not required.
+
+  .cds--accordion__item {
+    // Example: If you want to change the border or background of items
+    // border-bottom: 1px solid cds-theme.$border-subtle-01;
+  }
+
+  .cds--accordion__heading {
+    // Style for the clickable question part
+    // By default, Carbon handles this well.
+  }
+
+  .cds--accordion__content {
+    // Style for the answer part
+    @include cds-type.type-style('body-long-01');
+    padding-top: cds-spacing.$spacing-03; // Adjust if needed
+    padding-bottom: cds-spacing.$spacing-05; // Adjust if needed
+
+    p {
+      margin-bottom: cds-spacing.$spacing-05;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: cds-theme.$link-primary;
+      text-decoration: none; // Carbon usually handles this
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Responsive adjustments if needed, though Carbon components are generally responsive.
+@include cds-breakpoint.breakpoint-down(md) {
+  .faq-section {
+    padding-top: cds-spacing.$spacing-07;
+    padding-bottom: cds-spacing.$spacing-07;
+  }
+
+  .faq-section__heading {
+    @include cds-type.type-style(
+      'heading-03'
+    ); // Potentially smaller heading on mobile
+    margin-bottom: cds-spacing.$spacing-06;
+  }
+}

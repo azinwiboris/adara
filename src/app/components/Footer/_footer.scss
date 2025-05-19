@@ -1,0 +1,369 @@
+.cds-footer {
+  background-color: #161616; /* Carbon Gray 100 */
+  color: #f4f4f4; /* Carbon Gray 10 */
+  padding: 2rem 1rem; /* Default padding, can be adjusted by breakpoints */
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-top: 1px solid #393939; /* Carbon Gray 80 */
+}
+
+.cds-footer-container {
+  max-width: 1280px; /* Adjust as per your site's max-width */
+  margin: 0 auto;
+}
+
+.cds-footer-main {
+  display: flex;
+  flex-direction: column; /* Stack brand and links on mobile */
+  margin-bottom: 2rem;
+}
+
+.cds-footer-brand-section {
+  margin-bottom: 2rem;
+}
+
+.cds-footer-logo-svg {
+  width: 81px; /* As per SVG attributes */
+  height: 32px;
+  fill: #f4f4f4; /* White logo */
+  margin-bottom: 1rem;
+}
+
+.cds-footer-brand-description {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.42857; /* 20px / 14px */
+  color: #c6c6c6; /* Carbon Gray 30 */
+  margin-bottom: 1rem;
+  max-width: 320px; /* Limit width for better readability */
+}
+
+.cds-footer-social-links {
+  display: flex;
+  gap: 1rem; /* Space between social icons */
+}
+
+.cds-footer-social-link {
+  color: #f4f4f4;
+  text-decoration: none;
+  display: inline-flex; /* For icon alignment */
+  align-items: center;
+  justify-content: center;
+  /* Placeholder style for icons - replace with actual icon styling */
+}
+.social-icon-placeholder {
+  width: 20px;
+  height: 20px;
+  background-color: #393939;
+  color: #f4f4f4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+.cds-footer-social-link:hover .social-icon-placeholder {
+  background-color: #4d4d4d;
+}
+
+.cds-footer-links-section {
+  display: flex;
+  flex-direction: column; /* Accordions stacked on mobile */
+}
+
+.cds-footer-links-group {
+  margin-bottom: 1rem; /* Space between accordion groups on mobile */
+}
+
+.cds-footer-accordion-trigger {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #393939; /* Carbon Gray 80 */
+  color: #f4f4f4; /* Carbon Gray 10 */
+  padding: 0.75rem 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem; /* 16px */
+  font-weight: 600; /* Semi-bold */
+}
+.cds-footer-accordion-trigger:hover {
+  background-color: #262626; /* Carbon Gray 90 for subtle hover */
+}
+.cds-footer-accordion-trigger svg {
+  fill: #f4f4f4; /* Icon color */
+}
+
+.cds-footer-links-title-mobile {
+  /* Used inside accordion trigger */
+  margin: 0;
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+}
+
+.cds-footer-links-title-desktop {
+  /* For desktop view */
+  font-size: 1rem; /* 16px */
+  font-weight: 600; /* Semi-bold */
+  color: #f4f4f4; /* Carbon Gray 10 */
+  margin-bottom: 1rem;
+}
+
+.cds-footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* For smooth transition, works with max-height */
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.cds-footer-links-list.open {
+  max-height: 500px; /* Adjust if you have very long lists */
+  padding-top: 0.5rem; /* Space when accordion opens */
+  padding-bottom: 0.5rem;
+}
+
+.cds-footer-link-item {
+  margin-bottom: 0.75rem; /* 12px */
+}
+.cds-footer-link-item:last-child {
+  margin-bottom: 0;
+}
+
+.cds-footer-link {
+  font-size: 0.875rem; /* 14px */
+  color: #c6c6c6; /* Carbon Gray 30 */
+  text-decoration: none;
+  display: block; /* Make the whole area clickable */
+  padding: 0.25rem 0; /* Small padding for easier clicking */
+}
+
+.cds-footer-link:hover {
+  color: #f4f4f4; /* Carbon Gray 10 */
+  text-decoration: underline;
+}
+
+/* Legal Section */
+.cds-footer-legal-section {
+  border-top: 1px solid #393939; /* Carbon Gray 80 */
+  padding-top: 1.5rem;
+  font-size: 0.75rem; /* 12px */
+  color: #c6c6c6; /* Carbon Gray 30 */
+}
+
+.cds-footer-legal-primary {
+  margin-bottom: 1rem;
+}
+
+.cds-footer-copyright {
+  margin-bottom: 0.75rem;
+}
+
+.cds-footer-legal-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 0.5rem 1.5rem; /* row-gap column-gap */
+}
+
+.cds-footer-legal-link {
+  color: #c6c6c6; /* Carbon Gray 30 */
+  text-decoration: none;
+}
+.cds-footer-legal-link:hover {
+  color: #f4f4f4; /* Carbon Gray 10 */
+  text-decoration: underline;
+}
+
+.cds-footer-locale-selector {
+  margin-top: 1rem;
+}
+
+.cds-footer-locale-button {
+  background-color: transparent;
+  border: 1px solid #525252; /* Carbon Gray 70 */
+  color: #f4f4f4; /* Carbon Gray 10 */
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem; /* 14px */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+  border-radius: 0; /* Carbon buttons are typically not rounded by default */
+}
+.cds-footer-locale-button:hover {
+  background-color: #393939; /* Carbon Gray 80 */
+}
+.cds-footer-locale-icon {
+  fill: #f4f4f4;
+}
+
+/* Desktop Styles - md breakpoint (768px) */
+@media (min-width: 768px) {
+  .cds-footer {
+    padding: 3rem 2rem; /* More padding on desktop */
+  }
+
+  .cds-footer-main {
+    flex-direction: row; /* Brand and links side-by-side */
+    justify-content: space-between;
+    gap: 2rem; /* Space between brand and links sections */
+  }
+
+  .cds-footer-brand-section {
+    flex-basis: 25%; /* Example: Brand takes up 1/4 of the space */
+    flex-shrink: 0;
+    margin-bottom: 0; /* No margin needed as it's side-by-side */
+  }
+
+  .cds-footer-links-section {
+    flex-basis: 70%; /* Example: Links take up more space */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row; /* Link groups in columns */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute link groups */
+    gap: 1.5rem; /* Gap between link columns */
+  }
+
+  .cds-footer-links-group {
+    flex: 1 1 180px; /* Allow groups to grow/shrink, base width before wrapping within section */
+    margin-bottom: 0; /* No margin between groups as they are columns */
+  }
+
+  .cds-footer-accordion-trigger {
+    display: none; /* Hide accordion triggers on desktop */
+  }
+
+  .cds-footer-links-list {
+    max-height: none; /* Remove max-height for desktop, always visible */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .cds-footer-links-list.open {
+    /* Reset mobile open styles */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .cds-footer-legal-section {
+    display: flex;
+    flex-direction: row-reverse; /* Locale button on the right as per some designs */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem; /* Space above legal section */
+  }
+  .cds-footer-legal-primary {
+    display: flex;
+    flex-direction: row-reverse; /* Legal links before copyright */
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0;
+  }
+  .cds-footer-copyright {
+    margin-bottom: 0;
+    order: 2; /* Copyright after legal links */
+  }
+  .cds-footer-legal-links {
+    order: 1; /* Legal links first */
+    gap: 1rem 1.5rem; /* Adjust gap */
+  }
+  .cds-footer-locale-selector {
+    margin-top: 0;
+  }
+}
+
+/* Larger Desktop Styles - lg breakpoint (1056px) */
+@media (min-width: 1056px) {
+  .cds-footer-brand-section {
+    flex-basis: 20%;
+  }
+  .cds-footer-links-section {
+    flex-basis: 75%;
+    /* justify-content: flex-start; */ /* If you want them aligned left */
+    /* gap: 2rem; */ /* Adjust gap for larger screens */
+  }
+  .cds-footer-links-group {
+    flex: 1 1 200px; /* Slightly wider base for link groups */
+  }
+
+  /* Re-ordering legal section to match image 1 (Copyright . Links . Locale) */
+  .cds-footer-legal-section {
+    flex-direction: row; /* Reset from mobile/tablet */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cds-footer-legal-primary {
+    flex-direction: row; /* Copyright then Links */
+    order: 1; /* Left side */
+  }
+  .cds-footer-copyright {
+    order: 1; /* Copyright first in its group */
+  }
+  .cds-footer-legal-links {
+    order: 2; /* Links after copyright in its group */
+  }
+  .cds-footer-locale-selector {
+    order: 2; /* Right side */
+  }
+}
+
+// App.css
+// (Place this in a file named App.css, e.g., src/App.css)
+/* Ensure IBM Plex Sans is loaded, typically in your public/index.html or via @import in a global css file */
+/* <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet"> */
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4; /* Default light background for the page */
+  color: #161616;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Crucial for sticky footer */
+}
+
+.app-header {
+  background-color: #0f62fe; /* Example IBM Blue */
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.main-content {
+  flex: 1 0 auto; /* Allows main content to grow and push footer down */
+  padding: 2rem; /* Example padding */
+  width: 100%;
+  max-width: 1280px; /* Optional: align with footer container width */
+  margin: 0 auto; /* Center content */
+  box-sizing: border-box;
+}
+
+/* Basic code block styling for readability if you are showing code */
+code {
+  font-family: 'IBM Plex Mono', source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
+}
+.yamhead {
+  text-decoration-line: none;
+  list-style-type: none;
+  text-wrap: nowrap;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
