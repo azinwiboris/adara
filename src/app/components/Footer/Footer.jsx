@@ -174,7 +174,6 @@ const Footer = () => {
               <li><a href="#" className="cds-footer-legal-link">Terms and Conditions</a></li>
               <li><a href="#" className="cds-footer-legal-link">Cookie Preferences</a></li>
             </ul>
-            <Socials />
           </div>
           <div className="cds-footer-locale-selector">
             <button type="button" className="cds-footer-locale-button">

@@ -5,8 +5,8 @@ import FaqSection from '../app/components/FaqSection/FaqSection';
 function HomePage(){
   return(
     <>
-    <CTAHome />
-    <FaqSection />
+  
+    
     <FooterLead />
     </>
   );

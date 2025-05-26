@@ -1,13 +1,27 @@
-'use client'
 
-const ApplyNowPage = () => {
+'use client'
+import { Theme } from '@carbon/react';
+import C4DHorizontalRule from '@carbon/ibmdotcom-web-components/es/components-react/horizontal-rule/horizontal-rule';
+import './_apply-now.scss';
+import FormContactUs from '@/components/FormContactUs/FormContactUs';
+import ContactUsContentBlock from '@/components/ContactUsContentBlock/ContactUSContentBlock'
+import FooterLead from '@/components/FooterLead/FooterLead';
+import ContactContent from '@/components/ContactContent/ContactContent';
+const ContactUsPageContent = () => {
+  // 
+
   return (
-    <div>
-      <h1>Apply Now</h1>
-      <p>This is the Apply Now page content.</p>
-      {/* Add your application form or link here */}
+  <>
+  <ContactContent />
+    <ContactUsContentBlock />
+    
+    <div className="form-container">
+    <FormContactUs />
+    <FooterLead />
     </div>
+  
+  </>
   );
 };
 
-export default ApplyNowPage;
+export default ContactUsPageContent;
