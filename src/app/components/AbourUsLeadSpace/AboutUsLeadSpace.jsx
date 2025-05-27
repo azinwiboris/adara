@@ -48,7 +48,7 @@ function ContactUsLeadSpace() {
             alt="Vibrant upcoming African Leaders"
             default-src="/images/aboutUsImages/aboutImagelg.jpg"
             lightbox={true}
-            heading="Our Students Life.">
+            heading="Our Students Life Matters to Us">
               
             <C4DImageItem
               media="(min-width: 672px)"
