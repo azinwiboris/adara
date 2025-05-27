@@ -20,7 +20,7 @@ function ContactUsLeadSpace() {
         <p>
         Adara Institute is committed to delivering high-quality and accessible education through 
         our strategic partnerships with leading institutions around the world. We are Guided by 
-        the philosophy of <em>"Education for a Changing World."</em>
+        the philosophy of <em>&quot;Education for a Changing World.&quot;</em>
         </p>
         <br />
         </C4DContentBlockCopy>
@@ -28,9 +28,9 @@ function ContactUsLeadSpace() {
         <h1>Our Mission</h1>
         <p>
         Our Mission is to provide Individuals with the right knowledge and skills needed to solve Cameroon, Africa and the 
-        World's Greatest Challenges. Guided by a commitment to excellence, innovation, and global partnerships, 
+        World&apos;s Greatest Challenges. Guided by a commitment to excellence, innovation, and global partnerships, 
         we strive to equip 35,000 young Cameroonians with the knowledge and entrepreneurial skills to build and 
-        lead over 500 unicorn businesses that address Cameroon and Africa's most pressing challenges before 2035.
+        lead over 500 unicorn businesses that address Cameroon and Africa&apos;s most pressing challenges before 2035.
         </p>
         <br />
         </C4DContentBlockCopy>
