@@ -37,9 +37,9 @@ function ContactUsLeadSpace() {
         <C4DContentBlockCopy>
         <h1>Our Vision</h1>
         <p>
-        Our vision is to become Africa’s leading hub for transformative education and innovation, shaping a new 
+        Our vision is to become Africa&aposs leading hub for transformative education and innovation, shaping a new 
         generation of visionary leaders and entrepreneurs. We envision a future where empowered young Cameroonians drive sustainable development by creating globally 
-        competitive businesses that solve the continent’s greatest challenges and redefine its economic landscape.
+        competitive businesses that solve the continent&aposs greatest challenges and redefine its economic landscape.
         </p>
         <br />
         </C4DContentBlockCopy>
