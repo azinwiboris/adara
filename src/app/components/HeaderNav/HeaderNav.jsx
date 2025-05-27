@@ -35,7 +35,7 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
             isActive={isSideNavExpanded}
           />
           <HeaderName className="headerName" href="/" prefix="">
-          <h4>Adara Institute</h4>
+          Adara Institute
       
           {/* <GradientText
   colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
@@ -55,7 +55,7 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
             </HeaderMenuItem>
            
             
-            <HeaderMenuItem href="/">About Us</HeaderMenuItem>
+            <HeaderMenuItem href="/aboutUs">About Us</HeaderMenuItem>
           
          
            
@@ -67,7 +67,7 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
            
           
            
-            <HeaderMenuItem>Students Life</HeaderMenuItem>
+            <HeaderMenuItem href="StudentsLife">Students Life</HeaderMenuItem>
            
           
            
@@ -91,7 +91,7 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
                
                 <MenuItemDivider />
                 
-                <HeaderMenuItem>Admissions & Aids</HeaderMenuItem>
+                <HeaderMenuItem href="/Admission">Admissions & Aids</HeaderMenuItem>
                
                 <MenuItemDivider />
                
@@ -111,22 +111,21 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
              
                 <MenuItemDivider />
 
-                
-             
+                <div style={{marginLeft:16, marginRight:16}}>
                 <C4DButtonGroup>
       
-      <C4DButtonGroupItem  cta-type="local">
-        Apply Now
-      </C4DButtonGroupItem>
-      <C4DButtonGroupItem  cta-type="local">
-        Join Our WhatsApp Community
-      </C4DButtonGroupItem>
-      <MenuItemDivider />
-    </C4DButtonGroup>
-               
+                <C4DButtonGroupItem  cta-type="local">
+                  Apply Now
+                </C4DButtonGroupItem>
+                <C4DButtonGroupItem  cta-type="local">
+                  Join Our WhatsApp Community
+                </C4DButtonGroupItem>
+                <MenuItemDivider />
+              </C4DButtonGroup>
+              </div>
                 
                 <center>
-                <Image src="/../public/images/logoImage.png" 
+                <Image src="/images/logoImage.png" 
                   alt="The Official Logo of the Adara Instutute"
                   width={96} 
                   height={96}

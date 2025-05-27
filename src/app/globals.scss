@@ -6,23 +6,14 @@
 /// @link https://github.com/carbon-design-system/carbon/issues/2792
 @media (min-width: 42rem) {
   .cds--grid--no-gutter {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
 /// Padding was introduced in 10.3.0, needs an option to let grid set the viewport gutter
 /// @link https://github.com/carbon-design-system/carbon/issues/3010
 .cds--content {
-  margin-top: 3rem;
+  margin-top: 2rem;
   background: var(--cds-background);
-}
-
-.linkNav {
-  text-decoration-line: none;
-  list-style-type: none;
-  text-wrap: nowrap;
-  padding: 0;
-  display: flex;
-  align-items: center;
 }
