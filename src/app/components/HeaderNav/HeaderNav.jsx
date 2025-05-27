@@ -16,12 +16,11 @@ import {
     HeaderSideNavItems,
     Button,
     MenuItemDivider,
-    Stack,
   } from '@carbon/react';
   import Socials from '../Socials/Socials';
   import Link from 'next/link';
   import Image from 'next/image';
-  import { Chat, UserAvatar } from '@carbon/icons-react';
+  import { Chat } from '@carbon/icons-react';
   import DDSButton from '@carbon/ibmdotcom-web-components/es/components-react/button/button';
   import C4DButtonGroup from '@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group';
 import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-react/button-group/button-group-item';
@@ -49,32 +48,32 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
   
           </HeaderName>
           <HeaderNavigation aria-label="Adara Institute">
-            <div className="nav">
-          <Link className="linkNav" href="/">
-            <HeaderMenuItem className="headerMenu">
+            
+          
+            <HeaderMenuItem href="/">
               Home
             </HeaderMenuItem>
-            </Link>
-            <Link className="linkNav" href="/aboutUs">
-            <HeaderMenuItem>About Us</HeaderMenuItem>
-           </Link>
+           
+            
+            <HeaderMenuItem href="/">About Us</HeaderMenuItem>
+          
          
-            <Link className="linkNav" href="/Admission">
-            <HeaderMenuItem>Admissions & Aids</HeaderMenuItem>
-            </Link>
+           
+            <HeaderMenuItem http="/Admission">Admissions & Aids</HeaderMenuItem>
+            
           
-            <Link className="linkNav" href="/Academics">
-            <HeaderMenuItem>Academic Programs</HeaderMenuItem>
-            </Link>
+            
+            <HeaderMenuItem href="/Academics">Academic Programs</HeaderMenuItem>
+           
           
-            <Link className="linkNav" href="/StudentsLife">
+           
             <HeaderMenuItem>Students Life</HeaderMenuItem>
-            </Link>
+           
           
-            <Link className="linkNav" href="/Contactus">
-            <HeaderMenuItem>Contact Us</HeaderMenuItem>
-            </Link>
-            </div>
+           
+            <HeaderMenuItem href="/Contactus">Contact Us</HeaderMenuItem>
+           
+           
           </HeaderNavigation>
          
           <SideNav
@@ -83,36 +82,36 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
             isPersistent={false}>
             <SideNavItems>
               <HeaderSideNavItems>
-                <Link className="linkNav" href="/">
-                <HeaderMenuItem>Home</HeaderMenuItem>
-                </Link>
+              
+                <HeaderMenuItem href="/">Home</HeaderMenuItem>
+                
                 <MenuItemDivider />
-                <Link className="linkNav" href="/aboutUs">
-                <HeaderMenuItem>About Us</HeaderMenuItem>
-                </Link>
+               
+                <HeaderMenuItem href="/aboutUs">About Us</HeaderMenuItem>
+               
                 <MenuItemDivider />
-                <Link className="linkNav" href="/Admission">
+                
                 <HeaderMenuItem>Admissions & Aids</HeaderMenuItem>
-                </Link>
+               
                 <MenuItemDivider />
-                <Link className="linkNav" href="/Academics">
-                <HeaderMenuItem>Academic Programs</HeaderMenuItem>
-                </Link>
+               
+                <HeaderMenuItem href="/Academics">Academic Programs</HeaderMenuItem>
+                
                 <MenuItemDivider />
-                <Link className="linkNav" href="/StudentsLife">
-                <HeaderMenuItem>Students Life</HeaderMenuItem>
-                </Link>
+               
+                <HeaderMenuItem href="StudentsLife">Students Life</HeaderMenuItem>
+               
                 <MenuItemDivider />
-                <Link className="linkNav" href="/Contactus">
-                <HeaderMenuItem>Contact Us</HeaderMenuItem>
-                </Link>
+               
+                <HeaderMenuItem href="Conatactus">Contact Us</HeaderMenuItem>
+               
                 <MenuItemDivider />
-                <Link className="linkNav" href="/">
-                <HeaderMenuItem>Students Portal</HeaderMenuItem>
-                </Link>
+                
+                <HeaderMenuItem href="/">Students Portal</HeaderMenuItem>
+             
                 <MenuItemDivider />
 
-                <div className="stack_button">
+                
              
                 <C4DButtonGroup>
       
@@ -124,7 +123,7 @@ import C4DButtonGroupItem from '@carbon/ibmdotcom-web-components/es/components-r
       </C4DButtonGroupItem>
       <MenuItemDivider />
     </C4DButtonGroup>
-                </div>
+               
                 
                 <center>
                 <Image src="/../public/images/logoImage.png" 

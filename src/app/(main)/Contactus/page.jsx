@@ -1,6 +1,6 @@
 'use client'
 
-import ContactUsLeadSpace from '@/components/ContacusLeadSpace/ContactusLeadSpace';
+import ContactUsLeadSpace from '@/components/AbourUsLeadSpace/AboutUsLeadSpace';
 // Placeholder for Carbon icons if needed for specific sections, e.g., CheckmarkOutline for values
 import { CheckmarkOutline } from '@carbon/icons-react';
 

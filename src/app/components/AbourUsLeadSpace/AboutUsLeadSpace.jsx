@@ -17,54 +17,72 @@ function ContactUsLeadSpace() {
       <C4DLeadspaceHeading highlight="Adara Institute" type-style="fluid-heading-05">About the Adara Institute</C4DLeadspaceHeading>
       <C4DLeadspaceBlockContent>
         <C4DContentBlockCopy>
-          <p>
-        Adara Institute is committed to delivering high-quality, accessible education through 
-        our commitment to excellence, innovation, and strategic partnerships with 
-        leading institutions around the world. Guided by the philosophy of <em>"Education for a Changing World,"</em> we aim to empower individuals with 
-        the knowledge and skills needed to thrive in a rapidly evolving global landscape.
+        <p>
+        Adara Institute is committed to delivering high-quality and accessible education through 
+        our strategic partnerships with leading institutions around the world. We are Guided by 
+        the philosophy of <em>"Education for a Changing World."</em>
         </p>
         <br />
         </C4DContentBlockCopy>
-        <C4DLeadspaceHeading highlight="Mission" type-style="fluid-heading-05">OUr Mission</C4DLeadspaceHeading>
         <C4DContentBlockCopy>
-          <p>
-          
+        <h1>Our Mission</h1>
+        <p>
+        Our Mission is to provide Individuals with the right knowledge and skills needed to solve Cameroon, Africa and the 
+        World's Greatest Challenges. Guided by a commitment to excellence, innovation, and global partnerships, 
+        we strive to equip 35,000 young Cameroonians with the knowledge and entrepreneurial skills to build and 
+        lead over 500 unicorn businesses that address Cameroon and Africa's most pressing challenges before 2035.
+        </p>
+        <br />
+        </C4DContentBlockCopy>
+        <C4DContentBlockCopy>
+        <h1>Our Vision</h1>
+        <p>
+        Our vision is to become Africa’s leading hub for transformative education and innovation, shaping a new 
+        generation of visionary leaders and entrepreneurs. We envision a future where empowered young Cameroonians drive sustainable development by creating globally 
+        competitive businesses that solve the continent’s greatest challenges and redefine its economic landscape.
         </p>
         <br />
         </C4DContentBlockCopy>
         <C4DLeadspaceBlockMedia>
           <C4DImage
             alt="Vibrant upcoming African Leaders"
-            default-src="https://fpoimg.com/672x378?text=16:9&amp;bg_color=ee5396&amp;text_color=161616"
-            heading="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            default-src="/images/aboutUsImages/aboutImagelg.jpg"
+            lightbox={true}
+            heading="Our Students Life.">
+              
             <C4DImageItem
               media="(min-width: 672px)"
-              srcset="https://fpoimg.com/672x378?text=16:9&amp;bg_color=ee5396&amp;text_color=161616"
+              srcset="/images/aboutUsImages/aboutImagelg.jpg"
+              lightbox={true}
             />
             <C4DImageItem
               media="(min-width: 400px)"
-              srcset="https://fpoimg.com/400x225?text=16:9&amp;bg_color=ee5396&amp;text_color=161616"
+              srcset="/images/aboutUsImages/aboutImagelg.jpg"
+              lightbox={true}
             />
             <C4DImageItem
               media="(min-width: 320px)"
-              srcset="https://fpoimg.com/320x180?text=16:9&amp;bg_color=ee5396&amp;text_color=161616"
+              srcset="/images/aboutUsImages/aboutImagelg.jpg"
+              lightbox={true}
             />
           </C4DImage>
         </C4DLeadspaceBlockMedia>
+
         <C4DLinkList type="end">
-          <C4DLinkListHeading>Contact Us to Learn More</C4DLinkListHeading>
+          <C4DLinkListHeading>Learn More About</C4DLinkListHeading>
           <C4DLinkListItem href="https://example.com">
+          Our Students Life
              <ArrowRight slot="icon" />
           </C4DLinkListItem>
           <C4DLinkListItem href="https://example.com">
-            UrbanCode <ArrowRight slot="icon" />
+          Our Academic Programs <ArrowRight slot="icon" />
           </C4DLinkListItem>
           <C4DLinkListItem href="https://example.com">
-            View all products <Download slot="icon" />
+            Download our Students Guide <Download slot="icon" />
           </C4DLinkListItem>
         </C4DLinkList>
-        <C4DButton cta-type="local" href="https://example.com">
-          Contact sales
+        <C4DButton cta-type="local" href="/Contactus">
+          Talk to Us
         </C4DButton>
       </C4DLeadspaceBlockContent>
     </C4DLeadspaceBlock>
